@@ -28,7 +28,7 @@ import uk.ac.diamond.ss.domain.out.SummaryWriter;
 public class Main {
 
 	public static void main(String[] args) throws Throwable {
-		String filename = "problem1.xlsx";// problem
+		String filename = "test.xlsx";// problem
 
 		if (args.length > 0) {
 			filename = args[0];

@@ -80,7 +80,8 @@ public class Person {
 			int value = preferences.get(f).intValue();
 			sum = sum + value;
 			if(f.longExperiment){
-				sum = sum + value;//long experiments twice
+				sum = sum + value;
+				//long experiments twice
 			}
 		}
 		return sum;

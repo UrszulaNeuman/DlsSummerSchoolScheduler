@@ -57,15 +57,14 @@ public class SolutionWriterTest {
 		preferences.put(frac1, 2);// preference towards I11
 		p.setPereferences(preferences);
 		// create allocations
-		Person p1 = new Person("Ola",56);
 		Allocation allocation = new Allocation();
-		allocation.setPerson(p1);
+		allocation.setPerson(p);
 		allocation.setID(0);
 		allocation.setShift(sh1);
 		alo.add(allocation);
 
 		Allocation allocation1 = new Allocation();
-		allocation1.setPerson(p1);
+		allocation1.setPerson(p);
 		allocation1.setID(1);
 		allocation1.setShift(sh2);
 		alo.add(allocation1);

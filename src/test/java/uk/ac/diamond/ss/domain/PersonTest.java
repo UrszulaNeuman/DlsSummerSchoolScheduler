@@ -61,11 +61,11 @@ public class PersonTest {
 	}
 
 	private void createPreferences() {
-		Facility frac1 = Facility.getOrCreate("I11", 101);
-		Facility frac2 = Facility.getOrCreate("I06", 102);
-		Facility frac3 = Facility.getOrCreate("I07", 103);
+		Facility frac1 = Facility.getOrCreate("A1", 101);
+		Facility frac2 = Facility.getOrCreate("A2", 102);
+		Facility frac3 = Facility.getOrCreate("A3", 103);
 		frac3.setLong();
-		Facility frac4 = Facility.getOrCreate("I08", 104);
+		Facility frac4 = Facility.getOrCreate("A4", 104);
 		preferences.put(frac1, 3);
 		preferences.put(frac2, 2);
 		preferences.put(frac3, 5);

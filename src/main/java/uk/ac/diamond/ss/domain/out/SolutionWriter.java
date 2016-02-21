@@ -40,8 +40,8 @@ public class SolutionWriter {
 		headerRow.createCell(2).setCellValue("Period2");
 		headerRow.createCell(3).setCellValue("Period3");
 		headerRow.createCell(4).setCellValue("Period4");
+		headerRow.createCell(5).setCellValue("Period5");
 
-		List<Allocation> allocations = solution.getAllocations();
 		int i = 1;
 
 		for (Person p : people) {
@@ -72,6 +72,12 @@ public class SolutionWriter {
 			a3.setCellValue(findPeriod(p, 3));
 			if (checkPreference(p, 3)) {
 				a3.setCellStyle(style);
+			}
+			
+			Cell a4 = row.createCell(5);
+			a4.setCellValue(findPeriod(p, 4));
+			if (checkPreference(p, 4)) {
+				a4.setCellStyle(style);
 			}
 
 			i = i + 1;
